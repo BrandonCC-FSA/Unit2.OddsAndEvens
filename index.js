@@ -1,9 +1,9 @@
-const body = document.querySelector(`body`);
+const appDiv = document.querySelector(`#app`);
 
 function createHeader() {
   const h1 = document.createElement(`h1`);
   h1.innerHTML = `Odds and Events`;
-  body.appendChild(h1);
+  appDiv.appendChild(h1);
 }
 
 function createForm() {
@@ -29,16 +29,16 @@ function createForm() {
   sortAllButton.id = `sort-all-btn`;
   form.appendChild(sortAllButton);
 
-  body.appendChild(form);
+  appDiv.appendChild(form);
   return { form, input };
 }
 
 function createSection(title) {
   const h2 = document.createElement(`h2`);
   h2.innerText = title;
-  body.appendChild(h2);
+  appDiv.appendChild(h2);
   const ul = document.createElement(`ul`);
-  body.appendChild(ul);
+  appDiv.appendChild(ul);
   return ul;
 }
 
